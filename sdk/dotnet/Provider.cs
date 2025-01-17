@@ -23,6 +23,10 @@ namespace Pulumi.KubernetesCertManager
             : base("kubernetes-cert-manager", name, args ?? new ProviderArgs(), MakeResourceOptions(options, ""))
         {
         }
+        internal Provider(string name, ImmutableDictionary<string, object?> dictionary, CustomResourceOptions? options = null)
+            : base("kubernetes-cert-manager", name, new DictionaryResourceArgs(dictionary), MakeResourceOptions(options, ""))
+        {
+        }
 
         private static CustomResourceOptions MakeResourceOptions(CustomResourceOptions? options, Input<string>? id)
         {
