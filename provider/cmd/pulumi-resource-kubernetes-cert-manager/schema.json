@@ -890,6 +890,8 @@
                 "Pulumi": "3.*",
                 "Pulumi.Kubernetes": "4.*"
             },
+            "dictionaryConstructors": true,
+            "fullyQualifiedInputs": true,
             "respectSchemaVersion": true
         },
         "go": {
