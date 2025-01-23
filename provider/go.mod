@@ -3,11 +3,14 @@ module github.com/pulumi/pulumi-kubernetes-cert-manager/provider
 go 1.22.4
 
 require (
-	github.com/pulumi/pulumi-go-helmbase v0.2.0
+	github.com/pulumi/pulumi-go-helmbase v0.2.1-0.20250123022339-1c9d81b2ee40
+	github.com/pulumi/pulumi-kubernetes-cert-manager/sdk v0.1.1
 	github.com/pulumi/pulumi-kubernetes/sdk/v4 v4.21.0
 	github.com/pulumi/pulumi/pkg/v3 v3.147.0
 	github.com/pulumi/pulumi/sdk/v3 v3.147.0
 )
+
+replace github.com/pulumi/pulumi-kubernetes-cert-manager/sdk => ../sdk
 
 require (
 	dario.cat/mergo v1.0.0 // indirect
